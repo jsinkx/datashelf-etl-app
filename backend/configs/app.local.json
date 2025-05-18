@@ -3,6 +3,12 @@
     "host": "127.0.0.1",
     "port": 5000
   },
-  "services": {},
+  "services": {
+    "airflow": {
+      "username": "admin",
+      "password": "admin",
+      "url": "http://localhost:8080/api"
+    }
+  },
   "vars": {}
 }
