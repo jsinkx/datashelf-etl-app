@@ -19,7 +19,6 @@
     }
   },
   "vars": {
-    "intervalToUpdateAirflowAccessToken": 900000,
-    "s3RawDataDirectory": "raw-data"
+    "intervalToUpdateAirflowAccessToken": 900000
   }
 }
