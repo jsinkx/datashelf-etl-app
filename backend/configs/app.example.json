@@ -6,19 +6,21 @@
   },
   "services": {
     "airflow": {
-      "username": "admin",
-      "password": "8Ww325HeWVnx6cSD",
+      "username": "",
+      "password": "",
       "url": "http://localhost:8080"
     },
     "s3": {
       "url": "https://storage.yandexcloud.net",
-      "keyId": "YCAJEXWCQ7H8dSOSutzNJc3hD",
-      "keyValue": "YCMrgXcunCCUU9wm4S2dVpzUNEYo37gSlmgn4ezL",
-      "bucketName": "datashelf-datalake-bucket",
+      "keyId": "",
+      "keyValue": "",
+      "bucketName": "",
       "regionName": "ru-central1"
     }
   },
   "vars": {
-    "intervalToUpdateAirflowAccessToken": 900000
+    "intervalToUpdateAirflowAccessToken": 900000,
+    "s3RawDataDirectory": "raw-data",
+    "s3MaxFileSizeUploadMb": 10
   }
 }

@@ -20,6 +20,7 @@
   },
   "vars": {
     "intervalToUpdateAirflowAccessToken": 900000,
-    "s3RawDataDirectory": "raw-data"
+    "s3RawDataDirectory": "raw-data",
+    "s3MaxFileSizeUploadMb": 10 
   }
 }
