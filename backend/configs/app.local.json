@@ -7,7 +7,7 @@
   "services": {
     "airflow": {
       "username": "admin",
-      "password": "8Ww325HeWVnx6cSD",
+      "password": "rknGGAqRmnQX7bRq",
       "url": "http://localhost:8080"
     },
     "s3": {
@@ -16,11 +16,23 @@
       "keyValue": "YCMrgXcunCCUU9wm4S2dVpzUNEYo37gSlmgn4ezL",
       "bucketName": "datashelf-datalake-bucket",
       "regionName": "ru-central1"
+    },
+    "mongodb": {
+      "uri": "mongodb://admin:admin@localhost:27017",
+      "parameters": {
+        "dbName": "dashboard",
+        "maxPoolSize": 10,
+        "minPoolSize": 5,
+        "connectTimeoutMS": 10000,
+        "socketTimeoutMS": 45000,
+        "serverSelectionTimeoutMS": 10000,
+        "autoIndex": false
+      }
     }
   },
   "vars": {
     "intervalToUpdateAirflowAccessToken": 900000,
     "s3RawDataDirectory": "raw-data",
-    "s3MaxFileSizeUploadMb": 10 
+    "s3MaxFileSizeUploadMb": 10
   }
 }
