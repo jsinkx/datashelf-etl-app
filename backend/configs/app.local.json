@@ -7,7 +7,7 @@
   "services": {
     "airflow": {
       "username": "admin",
-      "password": "rknGGAqRmnQX7bRq",
+      "password": "k9b27Pa7qUDGv8fD",
       "url": "http://localhost:8080"
     },
     "s3": {
@@ -28,10 +28,15 @@
         "serverSelectionTimeoutMS": 10000,
         "autoIndex": false
       }
+    },
+    "rabbitmq": {
+      "url": "amqp://admin:admin@localhost:5672",
+      "queue": "datasets"
     }
   },
   "vars": {
     "intervalToUpdateAirflowAccessToken": 900000,
+    "intervalToCheckRabbitAndMongoStatus": 1000,
     "s3RawDataDirectory": "raw-data",
     "s3MaxFileSizeUploadMb": 10
   }
